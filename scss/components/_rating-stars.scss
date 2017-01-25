@@ -1,0 +1,10 @@
+// Rating Stars Component
+// -------------------------
+.rating-stars {
+  color: $color-softgrey;
+  font-size: 1.4em;
+
+  .active {
+    color: $color-softblue;
+  }
+}

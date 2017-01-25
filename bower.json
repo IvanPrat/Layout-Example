@@ -1,0 +1,7 @@
+{
+  "name": "Layout-Test",
+  "dependencies": {
+    "normalize.css": "*",
+    "font-awesome": "*"
+  }
+}

@@ -1,0 +1,11 @@
+.container {
+  margin: 0 auto;
+  max-width: $min-breakpoint;
+}
+
+.row {
+  display: table;
+  width: 100%;
+
+  padding: 0 $gutter;
+}

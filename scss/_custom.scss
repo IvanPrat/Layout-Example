@@ -1,0 +1,57 @@
+// Generic Styles
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  color: $color-hardgrey;
+}
+
+a {
+  text-decoration: none;
+  color: $color-hardgrey;
+}
+
+dl,
+dd,
+dt {
+  margin: 0;
+}
+
+dt {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+dd {
+  color: $color-grey;
+  font-size: 0.8em;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin-bottom: 1.5em;
+}
+
+// Header/Nav Styling
+header,
+nav {
+  a {
+    @include transition(all 0.3s ease-in);
+
+    color: $color-softwhite;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
+
+// Generic Classes
+.clearfix {
+  @include clearfix();
+}

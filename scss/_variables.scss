@@ -1,0 +1,22 @@
+// Define Core Colors
+$color-white              : #fff;
+$color-black              : #000;
+$color-softwhite          : rgba($color-white, 0.6);
+
+$color-purple             : #CB007B;
+
+$color-hardgrey           : #42525C;
+$color-hardgrey2          : #4E616D;
+$color-softgrey           : #D6E3ED;
+$color-grey               : #99ABB7;
+
+$color-softblue           : #00BEC3;
+
+// Define Breakpoints
+// FYI: there's only one breakpoint as it is not responsive, it's only used for set a minimum viewport width
+$min-breakpoint           : 960px;
+
+// Gutter(s)
+$gutter                   : 1.5em;
+$gutter-half              : $gutter / 2;
+$gutter-double            : $gutter * 2;

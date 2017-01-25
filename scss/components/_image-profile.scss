@@ -1,0 +1,25 @@
+// Image Profile Component
+// -------------------------
+$circle-size: 0.5em;
+
+.img-profile {
+  > img {
+    border-radius: 100%;
+  }
+
+  &.has-active-status {
+    & {
+      position: relative;
+    }
+
+    &:before {
+      background-color: $color-purple;
+      border: 2px solid $color-white;
+      border-radius: 100%;
+      content: " ";
+      position: absolute;
+      height: $circle-size;
+      width: $circle-size;
+    }
+  }
+}

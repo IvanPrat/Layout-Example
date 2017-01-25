@@ -1,0 +1,33 @@
+// Container Top Notifications Component
+// -------------------------
+.container-alerts-info {
+  $margin-space: 4em;
+
+  @include box-shadow(0 0 7px -2px rgba($color-black, 0.8));
+
+  display: none;
+
+  background-color: $color-white;
+
+  height: calc(100vh - #{$margin-space});
+  margin-top: $margin-space;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50vw;
+
+  padding: $gutter-double;
+
+  &.active {
+    display: block;
+  }
+
+  .profile-info {
+    border-bottom: 1px solid $color-softgrey;
+    padding-bottom: $gutter;
+
+    .times {
+      float: right;
+    }
+  }
+}

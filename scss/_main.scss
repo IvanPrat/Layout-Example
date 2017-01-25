@@ -1,0 +1,23 @@
+// Generic Styles - Main
+// -------------------------
+
+// Filter Tags
+.filter-tags {
+  @include clearfix();
+
+  margin-bottom: $gutter-double;
+}
+
+// Table Results
+.table-results {
+  .list-table-cell {
+    &:first-child {
+      text-align: right;
+      width: 10em;
+    }
+
+    &:nth-child(2) {
+      width: 5em;
+    }
+  }
+}

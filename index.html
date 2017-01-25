@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Layout Test</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+
+    <!-- Main Styles -->
+    <link href="dist/css/styles.min.css"  rel="stylesheet" type="text/css"/>
+
+    <!-- Font Awesome added here manually because there's a routing conflict with Grunt. This was the easiest solution, though. -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css"/>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="header-left-items">
+            <span class="header-icon-home"><a href="#"><i class="fa fa-home"></i></a></span>
+            <ul>
+              <li><a href="#">Senior Marketing Manager</a></li>
+              <li><a href="#">No. 1326</a></li>
+            </ul>
+          </div>
+
+          <div class="header-right-items">
+            <ul>
+              <li>
+                <a href="#" id="toggleTopNotifications" class="icon-notifications">
+                  <i class="fa fa-bell"></i>
+                  <span class="icon-notifications"><span class="count">7</span></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="nav navigation">
+      <div class="container">
+        <div class="row">
+          <ul>
+            <li><a href="#">Applicants <i class="fa fa-chevron-down"></i></a></li>
+            <li><a href="#">Job Description</a></li>
+            <li><a href="#">Advertisement</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="filter-tags">
+            <a class="tag" href="#">Top (2)</a>
+            <a class="tag" href="#">Not evaluated (7)</a>
+            <a class="tag" href="#">Unrated (7)</a>
+          </div>
+        </div>
+
+        <div class="list-table table-results">
+          <div class="list-table-row active">
+            <div class="list-table-cell">
+              <div class="rating-stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <div class="list-table-cell">
+              <div class="img-profile">
+                <img src="https://placeimg.com/50/50/any/grayscale"/>
+              </div>
+            </div>
+            <div class="list-table-cell">
+              <dl>
+                <dt>Christian M. Neumann</dt>
+                <dd>Applied today</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="list-table-row active">
+            <div class="list-table-cell">
+              <div class="rating-stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <div class="list-table-cell">
+              <div class="img-profile has-active-status">
+                <img src="https://placeimg.com/50/50/any/grayscale"/>
+              </div>
+            </div>
+            <div class="list-table-cell">
+              <dl>
+                <dt>Christian M. Neumann</dt>
+                <dd>Applied today</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="list-table-row">
+            <div class="list-table-cell">
+              <div class="rating-stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <div class="list-table-cell">
+              <div class="img-profile">
+                <img src="https://placeimg.com/50/50/any/grayscale"/>
+              </div>
+            </div>
+            <div class="list-table-cell">
+              <dl>
+                <dt>Christian M. Neumann</dt>
+                <dd>Applied today</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="list-table-row">
+            <div class="list-table-cell">
+              <div class="rating-stars">
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <div class="list-table-cell">
+              <div class="img-profile">
+                <img src="https://placeimg.com/50/50/any/grayscale"/>
+              </div>
+            </div>
+            <div class="list-table-cell">
+              <dl class="">
+                <dt>Christian M. Neumann</dt>
+                <dd>Applied today</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="list-table-row">
+            <div class="list-table-cell">
+              <div class="rating-stars">
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star active"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <div class="list-table-cell">
+              <div class="img-profile has-active-status">
+                <img src="https://placeimg.com/50/50/any/grayscale"/>
+              </div>
+            </div>
+            <div class="list-table-cell">
+              <dl>
+                <dt>Christian M. Neumann</dt>
+                <dd>Applied today</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="list-table-row">
+            <div class="list-table-cell">
+              <div class="rating-stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <div class="list-table-cell">
+              <div class="img-profile">
+                <img src="https://placeimg.com/50/50/any/grayscale"/>
+              </div>
+            </div>
+            <div class="list-table-cell">
+              <dl>
+                <dt>Christian M. Neumann</dt>
+                <dd>Applied today</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="list-table-row">
+            <div class="list-table-cell">
+              <div class="rating-stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+            <div class="list-table-cell">
+              <div class="img-profile has-active-status">
+                <img src="https://placeimg.com/50/50/any/grayscale"/>
+              </div>
+            </div>
+            <div class="list-table-cell">
+              <dl>
+                <dt>Christian M. Neumann</dt>
+                <dd>Applied today</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="containerTopNotifications" class="container-alerts-info">
+        <div class="profile-info">
+          <span class="times" id="closeNotifications">&times;</span>
+
+          <div class="profile-info-image">
+            <img src="https://placeimg.com/75/75/any/grayscale"/>
+          </div>
+
+          <div class="profile-info-desc">
+            <h3>Christian M. Neumann</h3>
+            <h4>Bedford Row, London WC1R 4LR, UK</h4>
+            <h5>Applied Today</h5>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="navigation">
+          <ul>
+            <li><a href="#">Documents</a></li>
+            <li><a href="#">Profile Details</a></li>
+            <li><a href="#">Questions</a></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- <footer></footer> -->
+
+     <script src="dist/js/scripts.min.js"></script>
+  </body>
+</html>

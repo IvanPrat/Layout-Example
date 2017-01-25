@@ -1,0 +1,32 @@
+// List Table Component
+// -------------------------
+.list-table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+
+  .list-table-row {
+    @include transition(all 0.3s ease-in);
+
+    display: table-row;
+
+    &.active {
+      .list-table-cell:first-child {
+        border-left: 2px solid #CB007B;
+      }
+    }
+
+    &:hover {
+      @include opacity(.7);
+
+      cursor: pointer;
+    }
+
+    .list-table-cell {
+      display: table-cell;
+      vertical-align: middle;
+      border-bottom: 1px solid $color-softgrey;
+      padding: $gutter-half;
+    }
+  }
+}

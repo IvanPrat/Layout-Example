@@ -1,0 +1,51 @@
+// Header Component
+// -------------------------
+.header {
+  @include box-shadow(0 -4px 25px -14px rgba(0, 0, 0, 0.5) inset);
+
+  background-color: $color-hardgrey;
+  color: $color-white;
+  width: 100%;
+  line-height: 4em;
+
+  // Left Header Items
+  .header-left-items {
+    @include list-inline();
+
+    float: left;
+
+    li {
+      &:not(:last-child) {
+        &:after {
+          content: "|";
+          color: $color-softwhite;
+        }
+      }
+
+      &:after {
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+    }
+
+    .header-icon-home {
+      font-size: 1.5em;
+      margin-left: -$gutter-double;
+      position: absolute;
+
+      &:after {
+        border-right: 1px solid $color-softwhite;
+        content: "";
+        margin-left: 1em;
+        width: 1px;
+      }
+    }
+  }
+
+  // Right Header Items
+  .header-right-items {
+    @include list-inline();
+
+    float: right;
+  }
+}

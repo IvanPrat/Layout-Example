@@ -1,0 +1,17 @@
+// Tags Component
+// -------------------------
+.tag {
+  @include transition(all 0.2s ease-in);
+
+  border: 1px solid #99abb7;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  margin-right: 0.5em;
+  padding: 0.4em 0.7em;
+
+  &:hover {
+    border-left: 4px solid rgba($color-softblue, 0.8);
+  }
+}

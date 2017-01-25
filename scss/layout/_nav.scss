@@ -1,0 +1,20 @@
+// Nav Component
+// -------------------------
+.nav {
+  @include box-shadow(0 -4px 25px -14px rgba(0, 0, 0, 0.5) inset);
+
+  width: 100%;
+
+  background-color: $color-hardgrey2;
+
+  .navigation {
+    ul {
+      padding-left: $gutter;
+      padding-right: $gutter;
+    }
+
+    a:hover {
+      color: $color-white
+    }
+  }
+}

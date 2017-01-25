@@ -1,0 +1,32 @@
+// Profile Info Component
+// -------------------------
+.profile-info {
+  $image-maxwidth: 5em;
+
+  .profile-info-image {
+    float: left;
+    max-width: $image-maxwidth;
+
+    > img {
+      @include border-radius(100%);
+
+      max-width: 100%;
+    }
+  }
+
+  .profile-info-desc {
+    margin-left: $image-maxwidth + 1em;
+
+    > * {
+      font-size: 0.9em;
+      margin-top: 0;
+      margin-bottom: $gutter-half;
+      font-weight: 300;
+    }
+
+    h3 {
+      font-weight: bold;
+      font-size: 1em;
+    }
+  }
+}
